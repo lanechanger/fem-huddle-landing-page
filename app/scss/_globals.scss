@@ -9,12 +9,18 @@ html{
   padding: 0;
 }
 
-// body{
-//   background-color:blue;
-//   @include media-breakpoint-up(md) {
-//     background-color: red;
-//   }
-// }
+body{
+  height: 100%;
+  min-height: 100vh;
+  background-image: url("/images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-color: $Violet;
+  font-family: 'Poppins', sans-serif;
+}
+
+aside{
+  width: 100%;
+}
 
 .attribution {
   font-size: 11px;
