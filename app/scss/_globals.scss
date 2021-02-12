@@ -10,7 +10,10 @@ html{
 }
 
 // body{
-
+//   background-color:blue;
+//   @include media-breakpoint-up(md) {
+//     background-color: red;
+//   }
 // }
 
 .attribution {
