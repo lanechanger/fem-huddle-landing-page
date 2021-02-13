@@ -10,9 +10,9 @@ html{
 }
 
 body{
+  background-color: $Violet;
   background-image: url("/images/bg-mobile.svg");
   background-repeat: no-repeat;
-  background-color: $Violet;
   font-family: 'Poppins', sans-serif;
 
   @include breakpoint-up(sm){
@@ -21,9 +21,35 @@ body{
   }
 }
 
-aside{
-  width: 100%;
+main{
+  flex-direction: column;
+  @include breakpoint-up(sm){
+    flex-direction: row;
+  }
 }
+
+article{
+  &>h1{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    @include breakpoint-up(sm){
+      font-size: 40px;
+      line-height: 60px;
+    }
+  }
+
+  &>p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    @include breakpoint-up(sm){
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+}
+
 
 .attribution {
   font-size: 11px;
