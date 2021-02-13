@@ -16,6 +16,11 @@ body{
   background-repeat: no-repeat;
   background-color: $Violet;
   font-family: 'Poppins', sans-serif;
+
+  @include breakpoint-up(sm){
+    background-image: url("/images/bg-desktop.svg");
+    // background-size: cover;
+  }
 }
 
 aside{
