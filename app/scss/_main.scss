@@ -3,13 +3,13 @@ main {
   padding-top: rem(54.8px);
 
   @include breakpoint-up(sm) {
-    padding-bottom: rem(51px);    
-    padding-top: rem(64px);  
+    padding-bottom: rem(60px);    
+    padding-top: rem(58px);  
   }
 
   @include breakpoint-up(md) {
-    padding-bottom: rem(39px);    
-    padding-top: rem(73px);  
+    padding-bottom: rem(56px);    
+    padding-top: rem(62px);  
   }
 
   @include breakpoint-up(lg) {
