@@ -16,6 +16,7 @@ body {
   background-image: url("/images/bg-mobile.svg");
   background-repeat: no-repeat;
   font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
   padding-left: 28px;
   padding-right: 28px;
 }
@@ -24,11 +25,39 @@ body {
   body {
     background-image: url("/images/bg-desktop.svg");
     background-size: cover;
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    padding-left: 68px;
+    padding-right: 68px;
   }
 }
 
 .app {
   padding-top: 38.2px;
+}
+
+@media screen and (min-width: 576px) {
+  .app {
+    padding-top: 46px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .app {
+    padding-top: 55px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -38,7 +67,7 @@ body {
 }
 
 .logo {
-  max-width: 240px;
+  max-width: 224px;
 }
 
 main {
@@ -46,9 +75,30 @@ main {
   padding-top: 54.8px;
 }
 
+@media screen and (min-width: 576px) {
+  main {
+    padding-bottom: 51px;
+    padding-top: 64px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    padding-bottom: 39px;
+    padding-top: 73px;
+  }
+}
+
 @media screen and (min-width: 992px) {
   main {
-    padding-top: 104px;
+    padding-bottom: 27px;
+    padding-top: 82px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main > .col-lg-7 {
+    max-width: 56%;
   }
 }
 
@@ -56,34 +106,64 @@ article {
   padding-top: 60px;
 }
 
+@media screen and (min-width: 992px) {
+  article {
+    margin-left: 25px;
+    padding-top: 32px;
+  }
+}
+
 article > h1 {
   font-size: 24px;
   font-weight: 600;
-  line-height: 36px;
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 576px) {
+  article > h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  article > h1 {
+    font-size: 36px;
+  }
 }
 
 @media screen and (min-width: 992px) {
   article > h1 {
     font-size: 40px;
-    line-height: 60px;
   }
 }
 
 article > p {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  line-height: 24px;
   margin-bottom: 0;
   margin-left: -4px;
   margin-right: -4px;
   margin-top: 1rem;
 }
 
+@media screen and (min-width: 576px) {
+  article > p {
+    font-size: 16.66px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  article > p {
+    font-size: 17.33px;
+  }
+}
+
 @media screen and (min-width: 992px) {
   article > p {
     font-size: 18px;
-    line-height: 27px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 1.5rem;
   }
 }
 
@@ -92,21 +172,34 @@ article .btn {
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
   color: #674baf;
   font-size: 0.75rem;
-  line-height: 18px;
   margin-top: 1.5rem;
   padding: 11.29px 75.14px 10.71px 75.86px;
   transition: all 150ms ease-in-out;
 }
 
-article .btn:hover {
-  background-color: #e882e8;
-  color: white;
+@media screen and (min-width: 576px) {
+  article .btn {
+    font-size: 16.66px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  article .btn {
+    font-size: 17.33px;
+  }
 }
 
 @media screen and (min-width: 992px) {
-  .fa-instagram {
-    margin-right: 5rem;
+  article .btn {
+    box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+    font-size: 18px;
+    padding: 13px 63px 16px 64px;
   }
+}
+
+article .btn:hover {
+  background-color: #e882e8;
+  color: white;
 }
 
 .footer-social {
@@ -125,6 +218,24 @@ article .btn:hover {
   width: 27.5px;
 }
 
+@media screen and (min-width: 576px) {
+  .footer-icon {
+    font-size: 15px;
+    height: 32px;
+    line-height: 32px;
+    width: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-icon {
+    font-size: 17px;
+    height: 36px;
+    line-height: 36px;
+    width: 36px;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .footer-icon {
     font-size: 19px;
@@ -137,14 +248,6 @@ article .btn:hover {
 .footer-icon:hover {
   border-color: #e882e8;
   color: #e882e8;
-}
-
-@media screen and (min-width: 992px) {
-  .footer {
-    border-width: 1.17647px;
-    height: 40px;
-    width: 40px;
-  }
 }
 
 .attribution {

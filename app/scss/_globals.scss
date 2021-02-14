@@ -16,63 +16,122 @@ body {
   background-image: url("/images/bg-mobile.svg");
   background-repeat: no-repeat;
   font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
   padding-left: 28px;
   padding-right: 28px;
 
   @include breakpoint-up(sm) {
     background-image: url("/images/bg-desktop.svg");
     background-size: cover;
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+
+  @include breakpoint-up(md) {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  @include breakpoint-up(lg) {
+    padding-left: 68px;
+    padding-right: 68px;
   }
 }
 
 .app {
   padding-top: 38.2px;
 
+  @include breakpoint-up(sm) {
+    padding-top: 46px;
+  }
+
+    @include breakpoint-up(md) {
+    padding-top: 55px;
+  }
+
   @include breakpoint-up(lg) {
     padding-top: 64px;
   }
 }
 
-.logo {    
-  max-width: 240px;
+.logo {        
+  max-width: 224px;
 }
 
 main {
   padding-bottom: 64px;    
   padding-top: 54.8px;
 
+  @include breakpoint-up(sm) {
+    padding-bottom: 51px;    
+    padding-top: 64px;  
+  }
+
+  @include breakpoint-up(md) {
+    padding-bottom: 39px;    
+    padding-top: 73px;  
+  }
+
   @include breakpoint-up(lg) {
-    padding-top: 104px;
+    padding-bottom: 27px;    
+    padding-top: 82px;  
+  }
+
+  >.col-lg-7{
+    
+    @include breakpoint-up(lg) {
+      max-width: 56%;
+    }
   }
 }
 
 article {
   padding-top: 60px;
 
+  @include breakpoint-up(lg) {
+    margin-left: 25px;
+    padding-top: 32px;
+  }
+
   &>h1 {
     font-size: 24px;
     font-weight: 600;
-    line-height: 36px;
     margin-bottom: 0;
+
+    @include breakpoint-up(sm) {
+      font-size: 30px;
+    }
+
+    @include breakpoint-up(md) {
+      font-size: 36px;
+    }
 
     @include breakpoint-up(lg) {
       font-size: 40px;
-      line-height: 60px;
     }
   }
 
   &>p {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    line-height: 24px;
     margin-bottom: 0;
     margin-left: -4px;
     margin-right: -4px;
     margin-top: 1rem;
 
+    @include breakpoint-up(sm) {
+      font-size: 16.66px;
+    }
+
+    @include breakpoint-up(md) {
+      font-size: 17.33px;
+    }
+
     @include breakpoint-up(lg) {
       font-size: 18px;
-      line-height: 27px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 1.5rem;
     }
   }
 
@@ -81,21 +140,28 @@ article {
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
     color: $Violet;
     font-size: 0.75rem;
-    line-height: 18px;
     margin-top: 1.5rem;
     padding: 11.29px 75.14px 10.71px 75.86px;
     transition: all 150ms ease-in-out;
+
+    @include breakpoint-up(sm) {
+      font-size: 16.66px;
+    }
+
+    @include breakpoint-up(md) {
+      font-size: 17.33px;
+    }
+
+    @include breakpoint-up(lg) {
+      box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+      font-size: 18px;
+      padding: 13px 63px 16px 64px;
+    }
 
     &:hover{
       background-color: $SoftMagenta;
       color: white;
     }
-  }
-}
-
-.fa-instagram {
-  @include breakpoint-up(lg) {
-    margin-right: 5rem;
   }
 }
 
@@ -115,6 +181,20 @@ article {
     transition: all 150ms ease-in-out;
     width: 27.5px;
 
+    @include breakpoint-up(sm) {
+      font-size: 15px;
+      height: 32px;
+      line-height: 32px;
+      width: 32px;
+    } 
+
+    @include breakpoint-up(md) {
+      font-size: 17px;
+      height: 36px;
+      line-height: 36px;
+      width: 36px;
+    } 
+
     @include breakpoint-up(lg) {
       font-size: 19px;
       height: 40px;
@@ -126,12 +206,6 @@ article {
       border-color: $SoftMagenta;
       color: $SoftMagenta;
     }
-  }
-
-  @include breakpoint-up(lg) {
-    border-width: 1.17647px;
-    height: 40px;
-    width: 40px;
   }
 }
 
