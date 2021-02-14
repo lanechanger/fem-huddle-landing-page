@@ -20,3 +20,12 @@ $breakpoints-down: ("tn":"575px",
     @content;
   }
 }
+
+@function stripUnit($value) {
+  // takes any value and strips the unit off. This is necessary if you want to perform any arithmetic operation on the value, which we do later in the rem() function
+  @return $value / ($value * 0 + 1);
+}
+
+@function rem($pxValue) {
+  @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
+}
