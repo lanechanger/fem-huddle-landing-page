@@ -17,43 +17,43 @@ body {
   background-repeat: no-repeat;
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
-  padding-left: 28px;
-  padding-right: 28px;
+  padding-left: rem(28px);
+  padding-right: rem(28px);
 
   @include breakpoint-up(sm) {
     background-image: url("/images/bg-desktop.svg");
     background-size: cover;
-    padding-left: 42px;
-    padding-right: 42px;
+    padding-left: rem(42px);
+    padding-right: rem(42px);
   }
 
   @include breakpoint-up(md) {
-    padding-left: 55px;
-    padding-right: 55px;
+    padding-left: rem(55px);
+    padding-right: rem(55px);
   }
 
   @include breakpoint-up(lg) {
-    padding-left: 68px;
-    padding-right: 68px;
+    padding-left: rem(68px);
+    padding-right: rem(68px);
   }
 }
 
 .logo {        
-  max-width: 224px;
+  max-width: rem(224px);
 }
 
 .app {
-  padding-top: 38.2px;
+  padding-top: rem(38.2px);
 
   @include breakpoint-up(sm) {
-    padding-top: 46px;
+    padding-top: rem(46px);
   }
 
     @include breakpoint-up(md) {
-    padding-top: 55px;
+    padding-top: rem(55px);
   }
 
   @include breakpoint-up(lg) {
-    padding-top: 64px;
+    padding-top: rem(64px);
   }
 }

@@ -1,20 +1,20 @@
 main {
-  padding-bottom: 64px;    
-  padding-top: 54.8px;
+  padding-bottom: rem(64px);    
+  padding-top: rem(54.8px);
 
   @include breakpoint-up(sm) {
-    padding-bottom: 51px;    
-    padding-top: 64px;  
+    padding-bottom: rem(51px);    
+    padding-top: rem(64px);  
   }
 
   @include breakpoint-up(md) {
-    padding-bottom: 39px;    
-    padding-top: 73px;  
+    padding-bottom: rem(39px);    
+    padding-top: rem(73px);  
   }
 
   @include breakpoint-up(lg) {
-    padding-bottom: 27px;    
-    padding-top: 82px;  
+    padding-bottom: rem(27px);    
+    padding-top: rem(82px);  
   }
 
   >.col-lg-7{
@@ -26,52 +26,52 @@ main {
 }
 
 article {
-  padding-top: 60px;
+  padding-top: rem(60px);
 
   @include breakpoint-up(lg) {
-    margin-left: 25px;
-    padding-top: 32px;
+    margin-left: rem(25px);
+    padding-top: rem(32px);
   }
 
   &>h1 {
-    font-size: 24px;
+    font-size: rem(24px);
     font-weight: 600;
     margin-bottom: 0;
 
     @include breakpoint-up(sm) {
-      font-size: 30px;
+      font-size: rem(30px);
     }
 
     @include breakpoint-up(md) {
-      font-size: 36px;
+      font-size: rem(36px);
     }
 
     @include breakpoint-up(lg) {
-      font-size: 40px;
+      font-size: rem(40px);
     }
   }
 
   &>p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: rem(16px);
     margin-bottom: 0;
-    margin-left: -4px;
-    margin-right: -4px;
-    margin-top: 1rem;
+    margin-left: rem(-4px);
+    margin-right: rem(-4px);
+    margin-top: rem(16px);
 
     @include breakpoint-up(sm) {
-      font-size: 16.66px;
+      font-size: rem(16.66px);
     }
 
     @include breakpoint-up(md) {
-      font-size: 17.33px;
+      font-size: rem(17.33px);
     }
 
     @include breakpoint-up(lg) {
-      font-size: 18px;
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-top: 1.5rem;
+      font-size: rem(18px);
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: rem(24px);
     }
   }
 
@@ -79,23 +79,23 @@ article {
     background-color: white;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
     color: $Violet;
-    font-size: 0.75rem;
-    margin-top: 1.5rem;
-    padding: 11.29px 75.14px 10.71px 75.86px;
+    font-size: rem(12px);
+    margin-top: rem(24px);
+    padding: rem(11.29px) rem(75.14px) rem(10.71px) rem(75.86px);
     transition: all 150ms ease-in-out;
 
     @include breakpoint-up(sm) {
-      font-size: 16.66px;
+      font-size: rem(16.66px)
     }
 
     @include breakpoint-up(md) {
-      font-size: 17.33px;
+      font-size: rem(17.33px);
     }
 
     @include breakpoint-up(lg) {
       box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
-      font-size: 18px;
-      padding: 13px 63px 16px 64px;
+      font-size: rem(18px);
+      padding: rem(13px) rem(63px) rem(16px) rem(64px);
     }
 
     &:hover{

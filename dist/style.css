@@ -17,82 +17,82 @@ body {
   background-repeat: no-repeat;
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
-  padding-left: 28px;
-  padding-right: 28px;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 @media screen and (min-width: 576px) {
   body {
     background-image: url("/images/bg-desktop.svg");
     background-size: cover;
-    padding-left: 42px;
-    padding-right: 42px;
+    padding-left: 2.625rem;
+    padding-right: 2.625rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   body {
-    padding-left: 55px;
-    padding-right: 55px;
+    padding-left: 3.4375rem;
+    padding-right: 3.4375rem;
   }
 }
 
 @media screen and (min-width: 992px) {
   body {
-    padding-left: 68px;
-    padding-right: 68px;
+    padding-left: 4.25rem;
+    padding-right: 4.25rem;
   }
 }
 
 .logo {
-  max-width: 224px;
+  max-width: 14rem;
 }
 
 .app {
-  padding-top: 38.2px;
+  padding-top: 2.3875rem;
 }
 
 @media screen and (min-width: 576px) {
   .app {
-    padding-top: 46px;
+    padding-top: 2.875rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .app {
-    padding-top: 55px;
+    padding-top: 3.4375rem;
   }
 }
 
 @media screen and (min-width: 992px) {
   .app {
-    padding-top: 64px;
+    padding-top: 4rem;
   }
 }
 
 main {
-  padding-bottom: 64px;
-  padding-top: 54.8px;
+  padding-bottom: 4rem;
+  padding-top: 3.425rem;
 }
 
 @media screen and (min-width: 576px) {
   main {
-    padding-bottom: 51px;
-    padding-top: 64px;
+    padding-bottom: 3.1875rem;
+    padding-top: 4rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   main {
-    padding-bottom: 39px;
-    padding-top: 73px;
+    padding-bottom: 2.4375rem;
+    padding-top: 4.5625rem;
   }
 }
 
 @media screen and (min-width: 992px) {
   main {
-    padding-bottom: 27px;
-    padding-top: 82px;
+    padding-bottom: 1.6875rem;
+    padding-top: 5.125rem;
   }
 }
 
@@ -103,66 +103,66 @@ main {
 }
 
 article {
-  padding-top: 60px;
+  padding-top: 3.75rem;
 }
 
 @media screen and (min-width: 992px) {
   article {
-    margin-left: 25px;
-    padding-top: 32px;
+    margin-left: 1.5625rem;
+    padding-top: 2rem;
   }
 }
 
 article > h1 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 0;
 }
 
 @media screen and (min-width: 576px) {
   article > h1 {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   article > h1 {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
 }
 
 @media screen and (min-width: 992px) {
   article > h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 
 article > p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   margin-bottom: 0;
-  margin-left: -4px;
-  margin-right: -4px;
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
   margin-top: 1rem;
 }
 
 @media screen and (min-width: 576px) {
   article > p {
-    font-size: 16.66px;
+    font-size: 1.04125rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   article > p {
-    font-size: 17.33px;
+    font-size: 1.08312rem;
   }
 }
 
 @media screen and (min-width: 992px) {
   article > p {
-    font-size: 18px;
-    margin-left: 0px;
-    margin-right: 0px;
+    font-size: 1.125rem;
+    margin-left: 0;
+    margin-right: 0;
     margin-top: 1.5rem;
   }
 }
@@ -173,27 +173,27 @@ article .btn {
   color: #674baf;
   font-size: 0.75rem;
   margin-top: 1.5rem;
-  padding: 11.29px 75.14px 10.71px 75.86px;
+  padding: 0.70562rem 4.69625rem 0.66938rem 4.74125rem;
   transition: all 150ms ease-in-out;
 }
 
 @media screen and (min-width: 576px) {
   article .btn {
-    font-size: 16.66px;
+    font-size: 1.04125rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   article .btn {
-    font-size: 17.33px;
+    font-size: 1.08312rem;
   }
 }
 
 @media screen and (min-width: 992px) {
   article .btn {
     box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
-    font-size: 18px;
-    padding: 13px 63px 16px 64px;
+    font-size: 1.125rem;
+    padding: 0.8125rem 3.9375rem 1rem 4rem;
   }
 }
 
@@ -203,24 +203,24 @@ article .btn:hover {
 }
 
 .footer-social {
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 
 .footer-icon {
   border: 1px solid white;
-  border-width: 0.798301px;
+  border-width: 0.04989rem;
   cursor: pointer;
-  font-size: 13px;
-  height: 28px;
-  line-height: 28px;
+  font-size: 0.8125rem;
+  height: 1.75rem;
+  line-height: 1.75rem;
   text-align: center;
   transition: all 150ms ease-in-out;
-  width: 27.5px;
+  width: 1.71875rem;
 }
 
 @media screen and (min-width: 576px) {
   .footer-icon {
-    font-size: 15px;
+    font-size: 0.9375rem;
     height: 2rem;
     line-height: 2rem;
     width: 2rem;
@@ -229,7 +229,7 @@ article .btn:hover {
 
 @media screen and (min-width: 768px) {
   .footer-icon {
-    font-size: 17px;
+    font-size: 1.0625rem;
     height: 2.25rem;
     line-height: 2.25rem;
     width: 2.25rem;
@@ -238,7 +238,7 @@ article .btn:hover {
 
 @media screen and (min-width: 992px) {
   .footer-icon {
-    font-size: 19px;
+    font-size: 1.1875rem;
     height: 2.5rem;
     line-height: 2.5rem;
     width: 2.5rem;
@@ -251,7 +251,7 @@ article .btn:hover {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.6875rem;
   text-align: center;
 }
 
