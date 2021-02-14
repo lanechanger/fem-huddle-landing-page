@@ -37,6 +37,10 @@ body {
   }
 }
 
+.logo {
+  max-width: 240px;
+}
+
 main {
   padding-bottom: 64px;
   padding-top: 54.8px;
