@@ -15,14 +15,13 @@ body {
   background-color: $Violet;
   background-image: url("/images/bg-mobile.svg");
   background-repeat: no-repeat;
+  background-size: contain;
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   padding-left: rem(28px);
   padding-right: rem(28px);
 
   @include breakpoint-up(sm) {
-    background-image: url("/images/bg-desktop.svg");
-    background-size: cover;
     padding-left: rem(42px);
     padding-right: rem(42px);
   }
@@ -33,6 +32,8 @@ body {
   }
 
   @include breakpoint-up(lg) {
+    background-image: url("/images/bg-desktop.svg");
+    background-size: cover;
     padding-left: rem(68px);
     padding-right: rem(68px);
   }
