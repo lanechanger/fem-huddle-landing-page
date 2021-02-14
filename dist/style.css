@@ -203,7 +203,7 @@ article .btn:hover {
 }
 
 .footer-social {
-  margin-bottom: 1rem;
+  margin-bottom: 5px;
 }
 
 .footer-icon {
@@ -221,27 +221,27 @@ article .btn:hover {
 @media screen and (min-width: 576px) {
   .footer-icon {
     font-size: 15px;
-    height: 32px;
-    line-height: 32px;
-    width: 32px;
+    height: 2rem;
+    line-height: 2rem;
+    width: 2rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .footer-icon {
     font-size: 17px;
-    height: 36px;
-    line-height: 36px;
-    width: 36px;
+    height: 2.25rem;
+    line-height: 2.25rem;
+    width: 2.25rem;
   }
 }
 
 @media screen and (min-width: 992px) {
   .footer-icon {
     font-size: 19px;
-    height: 40px;
-    line-height: 40px;
-    width: 40px;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    width: 2.5rem;
   }
 }
 

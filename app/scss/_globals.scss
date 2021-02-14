@@ -167,7 +167,7 @@ article {
 
 .footer{
   &-social{
-    margin-bottom: 1rem;
+    margin-bottom: 5px;
   }
 
   &-icon{
@@ -183,23 +183,23 @@ article {
 
     @include breakpoint-up(sm) {
       font-size: 15px;
-      height: 32px;
-      line-height: 32px;
-      width: 32px;
+      height: $icon-sm;
+      line-height: $icon-sm;
+      width: $icon-sm;
     } 
 
     @include breakpoint-up(md) {
       font-size: 17px;
-      height: 36px;
-      line-height: 36px;
-      width: 36px;
+      height: $icon-md;
+      line-height: $icon-md;
+      width: $icon-md;
     } 
 
     @include breakpoint-up(lg) {
       font-size: 19px;
-      height: 40px;
-      line-height: 40px;
-      width: 40px;
+      height: $icon-lg;
+      line-height: $icon-lg;
+      width: $icon-lg;
     } 
   
     &:hover{
