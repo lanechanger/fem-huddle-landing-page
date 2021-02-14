@@ -21,7 +21,7 @@ body {
 
   @include breakpoint-up(sm) {
     background-image: url("/images/bg-desktop.svg");
-    // background-size: cover;
+    background-size: cover;
   }
 }
 
@@ -112,6 +112,13 @@ article {
     text-align: center;
     transition: all 150ms ease-in-out;
     width: 27.5px;
+
+    @include breakpoint-up(lg) {
+      font-size: 19px;
+      height: 40px;
+      line-height: 40px;
+      width: 40px;
+    } 
   
     &:hover{
       border-color: $SoftMagenta;

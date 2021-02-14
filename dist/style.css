@@ -23,6 +23,7 @@ body {
 @media screen and (min-width: 576px) {
   body {
     background-image: url("/images/bg-desktop.svg");
+    background-size: cover;
   }
 }
 
@@ -118,6 +119,15 @@ article .btn:hover {
   text-align: center;
   transition: all 150ms ease-in-out;
   width: 27.5px;
+}
+
+@media screen and (min-width: 992px) {
+  .footer-icon {
+    font-size: 19px;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+  }
 }
 
 .footer-icon:hover {
