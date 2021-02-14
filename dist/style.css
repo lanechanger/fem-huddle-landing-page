@@ -44,6 +44,10 @@ body {
   }
 }
 
+.logo {
+  max-width: 224px;
+}
+
 .app {
   padding-top: 38.2px;
 }
@@ -64,10 +68,6 @@ body {
   .app {
     padding-top: 64px;
   }
-}
-
-.logo {
-  max-width: 224px;
 }
 
 main {

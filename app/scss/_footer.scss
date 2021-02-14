@@ -1,0 +1,52 @@
+.footer{
+  &-social{
+    margin-bottom: 5px;
+  }
+
+  &-icon{
+    border: 1px solid white;
+    border-width: 0.798301px;
+    cursor: pointer;
+    font-size: 13px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    transition: all 150ms ease-in-out;
+    width: 27.5px;
+
+    @include breakpoint-up(sm) {
+      font-size: 15px;
+      height: $icon-sm;
+      line-height: $icon-sm;
+      width: $icon-sm;
+    } 
+
+    @include breakpoint-up(md) {
+      font-size: 17px;
+      height: $icon-md;
+      line-height: $icon-md;
+      width: $icon-md;
+    } 
+
+    @include breakpoint-up(lg) {
+      font-size: 19px;
+      height: $icon-lg;
+      line-height: $icon-lg;
+      width: $icon-lg;
+    } 
+  
+    &:hover{
+      border-color: $SoftMagenta;
+      color: $SoftMagenta;
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: $SoftMagenta;
+}
