@@ -1,15 +1,17 @@
-html{
+html {
   box-sizing: border-box;
   font-size: 100%;
 }
 
-*,*::after,*::before{
+*,
+*::after,
+*::before {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   background-color: $Violet;
   background-image: url("/images/bg-mobile.svg");
   background-repeat: no-repeat;
@@ -17,41 +19,112 @@ body{
   padding-left: 28px;
   padding-right: 28px;
 
-  @include breakpoint-up(sm){
+  @include breakpoint-up(sm) {
     background-image: url("/images/bg-desktop.svg");
     // background-size: cover;
   }
 }
 
-main{
-  flex-direction: column;
-  @include breakpoint-up(sm){
-    flex-direction: row;
+.app {
+  padding-top: 38.2px;
+
+  @include breakpoint-up(lg) {
+    padding-top: 64px;
   }
 }
 
-article{
-  &>h1{
+.logo {}
+
+main {
+  padding-bottom: 64px;    
+  padding-top: 54.8px;
+
+  @include breakpoint-up(lg) {
+    padding-top: 104px;
+  }
+}
+
+article {
+  padding-top: 60px;
+
+  &>h1 {
     font-size: 24px;
     font-weight: 600;
     line-height: 36px;
-    @include breakpoint-up(sm){
+    margin-bottom: 0;
+
+    @include breakpoint-up(lg) {
       font-size: 40px;
       line-height: 60px;
     }
   }
 
-  &>p{
+  &>p {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 24px;
-    @include breakpoint-up(sm){
+    margin-bottom: 0;
+    margin-left: -4px;
+    margin-right: -4px;
+    margin-top: 1rem;
+
+    @include breakpoint-up(lg) {
       font-size: 18px;
       line-height: 27px;
     }
   }
+
+  & .btn{
+    background-color: white;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
+    color: $Violet;
+    font-size: 0.75rem;
+    line-height: 18px;
+    margin-top: 1.5rem;
+    padding: 11.29px 75.14px 10.71px 75.86px;
+    transition: all 150ms ease-in-out;
+
+    &:hover{
+      background-color: $SoftMagenta;
+      color: white;
+    }
+  }
 }
 
+.fa-instagram {
+  @include breakpoint-up(lg) {
+    margin-right: 5rem;
+  }
+}
+
+.footer{
+  &-social{
+    margin-bottom: 1rem;
+  }
+
+  &-icon{
+    border: 1px solid white;
+    border-width: 0.798301px;
+    cursor: pointer;
+    font-size: 13px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    transition: all 150ms ease-in-out;
+    width: 27.5px;
+  
+    &:hover{
+      border-color: $SoftMagenta;
+      color: $SoftMagenta;
+    }
+  }
+
+  @include breakpoint-up(lg) {
+    border-width: 1.17647px;
+    height: 40px;
+    width: 40px;
+  }
+}
 
 .attribution {
   font-size: 11px;
@@ -59,5 +132,5 @@ article{
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: $SoftMagenta;
 }

@@ -3,7 +3,9 @@ html {
   font-size: 100%;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
@@ -14,6 +16,8 @@ body {
   background-image: url("/images/bg-mobile.svg");
   background-repeat: no-repeat;
   font-family: 'Poppins', sans-serif;
+  padding-left: 28px;
+  padding-right: 28px;
 }
 
 @media screen and (min-width: 576px) {
@@ -22,23 +26,39 @@ body {
   }
 }
 
-main {
-  flex-direction: column;
+.app {
+  padding-top: 38.2px;
 }
 
-@media screen and (min-width: 576px) {
-  main {
-    flex-direction: row;
+@media screen and (min-width: 992px) {
+  .app {
+    padding-top: 64px;
   }
+}
+
+main {
+  padding-bottom: 64px;
+  padding-top: 54.8px;
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    padding-top: 104px;
+  }
+}
+
+article {
+  padding-top: 60px;
 }
 
 article > h1 {
   font-size: 24px;
   font-weight: 600;
   line-height: 36px;
+  margin-bottom: 0;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 992px) {
   article > h1 {
     font-size: 40px;
     line-height: 60px;
@@ -49,12 +69,67 @@ article > p {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 24px;
+  margin-bottom: 0;
+  margin-left: -4px;
+  margin-right: -4px;
+  margin-top: 1rem;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 992px) {
   article > p {
     font-size: 18px;
     line-height: 27px;
+  }
+}
+
+article .btn {
+  background-color: white;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
+  color: #674baf;
+  font-size: 0.75rem;
+  line-height: 18px;
+  margin-top: 1.5rem;
+  padding: 11.29px 75.14px 10.71px 75.86px;
+  transition: all 150ms ease-in-out;
+}
+
+article .btn:hover {
+  background-color: #e882e8;
+  color: white;
+}
+
+@media screen and (min-width: 992px) {
+  .fa-instagram {
+    margin-right: 5rem;
+  }
+}
+
+.footer-social {
+  margin-bottom: 1rem;
+}
+
+.footer-icon {
+  border: 1px solid white;
+  border-width: 0.798301px;
+  cursor: pointer;
+  font-size: 13px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  transition: all 150ms ease-in-out;
+  width: 27.5px;
+}
+
+.footer-icon:hover {
+  border-color: #e882e8;
+  color: #e882e8;
+}
+
+@media screen and (min-width: 992px) {
+  .footer {
+    border-width: 1.17647px;
+    height: 40px;
+    width: 40px;
   }
 }
 
@@ -64,6 +139,6 @@ article > p {
 }
 
 .attribution a {
-  color: #3e52a3;
+  color: #e882e8;
 }
 /*# sourceMappingURL=style.css.map */
