@@ -141,28 +141,15 @@ article > h1 {
 
 article > p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
+  font-size: clamp(1rem, 1rem + (((100vw - 576px) / 100) * 0.5), 1.125rem);
   margin-bottom: 0;
   margin-left: -0.25rem;
   margin-right: -0.25rem;
   margin-top: 1rem;
 }
 
-@media screen and (min-width: 576px) {
-  article > p {
-    font-size: 1.04125rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  article > p {
-    font-size: 1.08312rem;
-  }
-}
-
 @media screen and (min-width: 992px) {
   article > p {
-    font-size: 1.125rem;
     margin-left: 0;
     margin-right: 0;
     margin-top: 1.5rem;
